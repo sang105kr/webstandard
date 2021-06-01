@@ -1,0 +1,18 @@
+@charset "utf-8";
+main section form {
+	background : pink;
+	border-style : none;
+	border-width : 1px;
+	margin-left : 10px;
+	margin-right : 10px;
+}
+.formspan {
+	font-family : gothic;
+	font-weight : bold;
+	color : blue;
+}
+
+footer {
+	border-radius : 10px;
+	background : orange;
+}

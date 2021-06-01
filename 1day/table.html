@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    tfoot{
+      background-color: hotpink;
+      color:white;
+
+    }
+    thead{
+      background-color: blueviolet;
+      color:white;
+      font-size: 20px;
+    }
+  </style>
+  <script>
+    window.addEventListener("load",function(){
+      const tfootEle = document.querySelector("tfoot");
+
+      tfootEle.addEventListener("mouseover",function(e){
+        tfootEle.style.backgroundColor = "yellow";
+
+      });      
+
+      tfootEle.addEventListener("mouseout",function(e){
+        tfootEle.style.backgroundColor = "blue";
+      });   
+      
+      const buttonEle = document.querySelector("button");
+      buttonEle.addEventListener("click",function(e){
+        tfootEle.style.fontSize = "30px";
+      })
+    });
+    
+  </script>
+</head>
+<body>
+  <button>클릭</button>
+  <table border="1">
+    <tfoot>
+      <tr>
+        <td>31</td>
+        <td>32</td>
+        <td>33</td>
+      </tr>
+    </tfoot>    
+    <tbody>
+      <tr>
+        <td>21</td>
+        <td>22</td>
+        <td>23</td>     
+      </tr>
+      <tr>
+        <td>21</td>
+        <td>22</td>
+        <td>23</td>     
+      </tr>
+    </tbody>      
+    <thead>
+      <tr>
+        <th>11</th>
+        <th>12</th>
+        <th>13</th>
+      </tr>
+    </thead>
+  </table>
+</body>
+</html>

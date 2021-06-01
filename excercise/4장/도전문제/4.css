@@ -1,0 +1,36 @@
+@charset "utf-8";
+body{
+  background-color: aliceblue;
+}
+
+header {
+  border-bottom: 1px solid;
+}
+https://zoom.us/j/2753328194?pwd=RVkzMUx3aXhqQ2RFKzBMajdadnk3Zz09
+header > h1 {
+  color:brown;
+  text-align: center;
+}
+
+nav > h2 {
+	text-shadow : 3px 3px 5px skyblue;
+	color : blue;	
+}
+main > section article p {
+	font-family : "휴먼편지체";
+	font-size : 1em;
+	text-indent : 1em;
+}
+main > section article h2 a  {
+	text-decoration : none; 
+}
+
+nav ul {
+	border-style : dotted;
+	border-width : 1px;
+}
+
+footer {
+	border-radius : 10px;
+	background : orange;
+}
