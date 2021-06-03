@@ -1,0 +1,195 @@
+@charset "utf-8";
+/* *{outline:1px solid red;} */
+body{margin:0;}
+/* 공통 */
+.container{
+width:900px; height:100%; margin: 0 auto;
+}
+ul {
+padding-left: 0; list-style-type: none;
+margin:0;
+}
+a {
+text-decoration: none;
+color: #000;
+}
+
+/* 최상위 메뉴 */
+.uppermost {
+background-color: yellow; height:30px;
+}
+.uppermost .container-upm{
+background-color: greenyellow;
+width: 100%;
+}
+.uppermost .container-upm * {
+/* outline:1px solid red; */
+}
+.uppermost .container-upm .upm-menu li {
+float:left;
+padding: 3px 5px;
+}
+.uppermost .container-upm .upm-menu li:nth-child(2){
+width:60px; 
+font-family: 'Roboto', sans-serif;
+font-weight: 700;
+}
+.uppermost .container-upm .upm-menu li:nth-child(3){
+
+}
+.uppermost .container-upm .upm-menu li:nth-child(4){
+width:100px; 
+font-family: 'Roboto Slab', serif;
+font-weight: 700;
+}
+.uppermost .container-upm .upm-menu li:nth-last-child(1){
+  text-align: right;
+}
+/* 헤더 */
+.header{
+background-color: aqua; height: 200px;
+}
+.header .container-h{
+width:100%;
+background-image: url("https://cdn.pixabay.com/photo/2017/12/15/13/51/polynesia-3021072_640.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center center;
+
+position:relative;
+font-family: 'Nanum Pen Script', cursive;
+font-weight: 400;
+}
+
+.header .container-h::after{
+content: "행복한 수요일!";
+font-size: 4rem;
+position:absolute;
+left:100px;
+top:30px;
+color:white;
+text-shadow: 10px 10px #333;
+}
+.header .container-h:hover:after{
+font-size: 5rem;
+transform: rotate(-10deg);
+}
+
+/* 메뉴 */
+.nav {
+  background-color: aquamarine; height:30px;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;  
+}
+.nav ul li {
+float:left; padding:3px 10px;
+position: relative;
+letter-spacing: 0.13em;
+}
+.nav ul li:nth-child(1){
+padding-left: 0;
+}
+
+.nav ul li:hover a{
+
+}
+
+.nav ul li:hover::before {
+  content: " ";
+  display: block;
+  position:absolute;
+  left:0; top:1.3em; 
+  width:100%; height:3px;
+  background-color: #666; 
+  transition: all 1s;
+}
+
+/* 메인 */
+.main{
+background-color: transparent;
+height: 400px;
+}
+.sidebar{
+width:30%;background-color: red; height:100%;
+float:left;
+}
+.content{
+width:70%;background-color: blue;height:100%;
+float:left;
+}
+.content form {
+width: 50%; margin: 50px auto;
+}
+.content form p {
+text-align: center;
+padding: 10px 0;
+}
+.content form {
+color: white;
+font-weight: bold;
+}
+.content form ul li{
+padding: 5px 0; 
+}
+.content form ul li input{
+  box-sizing: border-box;
+  width:90%;
+  vertical-align: top;
+}
+.content form ul li:nth-child(2){
+  color:orange;
+}
+.content form ul li:nth-child(4){
+  color:greenyellow;
+}
+.content form ul li span{
+  vertical-align: top;
+}
+.content form ul li button{
+width:100%;
+border:none;
+padding:5px 0;
+background-color: teal;
+color:white;
+font-weight: bolder;
+}
+/* 푸터 */
+.footer{
+background-color: gray; height:100px;
+}
+.footer .copyright{
+text-align: center;
+line-height: 100px;
+}
+
+/* 유틸 */
+.clearfix::after{
+content: " "; display: block; clear:both;
+}
+
+/* 아이콘 스타일 */
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
