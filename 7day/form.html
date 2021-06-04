@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <style>
+    /* * {outline:1px solid red;} */
+    ul { list-style-type: none; padding-left: 0;}
+    ul > li { padding:3px 5px; position:relative; box-sizing:border-box; height:36px;}
+    #joinForm{width:300px; margin:50px auto;}
+    ul > li:nth-child(even) {
+      border:1px solid #aaa; padding:5px;
+    }
+    ul > li:nth-child(even) input{
+      border:none; outline:none;
+    }
+    .heighlight-01 {
+      position:absolute;
+      line-height:26px; right:10px; color:#aaa;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap-joinForm">
+    <form id="joinForm">
+      <ul>
+        <li><label for="user_id">아이디</label></li>
+        <li><input type="text" id="user_id" maxlength="20"><span class="domain heighlight-01">@naver.com</span></li>
+        <li><label for="user_pw">비밀번호</label></li>
+        <li><input type="password" id="user_pw" maxlength="12"><i class="fas fa-lock heighlight-01"></i></li>
+      </ul>
+    </form>
+  </div>
+</body>
+</html>
